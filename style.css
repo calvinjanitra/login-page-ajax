@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Poppins&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,6 +8,7 @@
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    font-family: 'Poppins', sans-serif;
 }
 body {
     font-family: 'Roboto Slab';
@@ -16,7 +19,7 @@ body {
     width: 100vw;
     height: 100vh;
     /* height: 100vh; */
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* display: flex; */
 }
 .wrapper {
@@ -26,10 +29,25 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background: radial-gradient(54.91% 167.98% at 19.04% 76.25%, #3c4b26 0%, #87907a 100%);
 }
+
 div#contact_form {
+    /* border: 5px solid blue; */
     display: flex;
     flex-direction: row;
+    /* border: 1px solid black; */
+    height: 60%;
+    /* padding: 10px; */
+    /* column-gap: 20px; */
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+form {
+    /* width: 60%; */
+    padding: 10px;
+    background-color: white;
 }
 div.input-box {
     display: flex;
@@ -49,12 +67,13 @@ div.input-box input {
 }
 input.button {
     font-size: 1.5rem;
-    background: black;
+    background: #5a4b37;
     color: white;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 10px;
     padding: 4px 40px;
 }
+
 h1 {
     font-size: 5rem;
     text-transform: uppercase;
@@ -64,11 +83,23 @@ h1 {
     line-height: 0.8;
 }
 div.greetings {
+    display: flex;
     text-align: center;
     font-size: 1.2rem;
     background-color: #d3d3d3;
-    background-image: linear-gradient(15deg, transparent 28%, rgba(255, 255, 255, 0.5) 28%);
-    background-size: 50px;
+    background-image: url('bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: 50px; */
+    justify-content: center;
+    /* align-items: center; */
+}
+.greetings .text {
+    padding-top: 20px;
+    color: white;
+    width: 80%;
+    /* border: 1px solid red; */
+    row-gap: 20px;
 }
 div.input-box input.error {
     border: 2px dashed red;
